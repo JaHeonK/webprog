@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Kim Ja Heon Homework3</title>
+    <link rel="stylesheet" type="text/css" href="theme.css"> 
+    <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="heading">
+        Kim Ja Heon
+        <span class="heading-subtext"> Homework3</span>
+      </h1>
+    </header>
+    <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a> 
+    <section class="section">
+      <h2 class="sub-heading">Overview</h2>
+      <p>Hi, My name is Kim Ja Heon. I study computer science. It is very hard But, I feel funny and Surprising. I'm learning a subject called web programming, and it's my first time to experience programs and methods, but when I do it, I feel a sense of accomplishment and I think it's fun. Feeling proud of finding and solving errors, I feel that I'm doing my assignments and growing more and more and more!
+      </p>
+    </section>
+    <section class="section">
+      <h2 class="sub-heading">The Details</h2>
+      <div class="details">
+        <i class="fas fa-calendar-check"></i>
+        <h3 class="details-heading">Birth</h3>
+        <p>April 25, 2002</p>
+        <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+      </div>
+      <div class="details">
+        <i class="fas fa-heart"></i>
+        <h3 class="details-heading">Lovemyself</h3>
+        <p>Kim Ja Heon , 20211363</p>
+        <img class="me-image" src="./img/me.jpg" alt="Me" />
+      </div>
+      <div class="details">
+        <i class="fas fa-school"></i>
+        <h3 class="details-heading">Study</h3>
+        <p>Attending Dongseo University and major in computer engineering.</p>
+      </div>
+      <div class="details">
+        <i class="far fa-comment-alt"></i>
+        <h3 class="details-heading" id="Message">Message</h3>
+        <p>[Embed your e-mail form here]<a rel="noopener" href="#">kevin5178@naver.com</a></p>
+        <!-- Include Embedded link of Google Form here in place of # -->
+        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+      </div>
+    </section>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+      var scroll = new SmoothScroll('a[href*="#"]');
+      var rsvpButton = document.getElementById('rsvpButton')
+      rsvpButton.addEventListener('click',hideButton,false);
+
+      function hideButton() {
+        rsvpButton.style.display = 'none';
+      }   
+    </script>
+  </body>
+</html>
